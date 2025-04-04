@@ -77,5 +77,5 @@ gem "watchman", "~> 0.1.1"
 gem "ruby-lsp-rails", "~> 0.4.0"
 
 gem "webrick", "~> 1.9"
-gem "iconv", "~> 1.0.3"
+gem "iconv", "~> 1.1.0"
 gem "hotwire-livereload", "~> 2.0", group: :development

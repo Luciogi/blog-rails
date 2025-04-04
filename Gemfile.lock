@@ -126,7 +126,7 @@ GEM
       railties (>= 7.0.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
-    iconv (1.0.8)
+    iconv (1.1.0)
     importmap-rails (2.1.0)
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
@@ -387,7 +387,7 @@ DEPENDENCIES
   debug
   devise (~> 4.9)
   hotwire-livereload (~> 2.0)
-  iconv (~> 1.0.3)
+  iconv (~> 1.1.0)
   importmap-rails
   jbuilder
   kamal
