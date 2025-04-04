@@ -1,0 +1,10 @@
+
+<% @blog_posts.each do |blog_post| %>
+<div class="bg-gray-100 my-5 rounded-xl p-5">
+  <h2 class="text-3xl font-bold">
+      <%= link_to blog_post.title, blog_post %>
+  </h2>
+  <p class="text-black-100 mt-5"> <%= blog_post.body %> </p>
+</div>
+ 
+<% end %>

@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+textarea, input[type="password"], input[type="email"], input[type="text"] {
+    @apply outline-2 rounded p-1;
+}
+
+.field {
+    @apply my-2;
+}
+
+._my-btn, input[type="submit"] {
+    @apply bg-blue-400 px-2 py-1 rounded-xl;
+}
+._my-red-btn {
+    @apply bg-red-400 px-2 py-1 rounded-xl;
+}

@@ -1,0 +1,10 @@
+
+<div class="flex gap-2">
+    <h1 class="text-3xl font-bold"> <%= @blog_post.title %> </h1>
+    <% if user_signed_in? %>
+        <%= link_to "Edit", edit_blog_post_path, class: "btn bg-blue-400 px-2 py-1 rounded-xl" %>
+    <% end %>
+</div>
+<p>
+    <%= @blog_post.body %>
+</p>

@@ -1,0 +1,23 @@
+<%= form_with model: blog_post do |form| %>
+    <div>
+        <% if form.object.errors.any? %>
+            <div>
+                <% form.object.errors.full_messages.each do |message| %>
+                    <div>
+                        <%= message %>
+                    </div>
+                <% end %>
+            </div>
+        <% end %>
+        <div class="mb-5">
+            <%= form.label :title %> <br>
+            <%= form.text_field :title, class: "w-full" %>
+        </div>
+        
+    </div>
+    <div>
+        <%= form.label :body %> <br>
+        <%= form.text_area :body, class: "w-full" %>
+    </div>
+    <%= form.button class: "btn bg-blue-400 px-2 py-1 rounded-xl my-5" %>
+<% end %>
