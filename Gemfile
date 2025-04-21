@@ -68,7 +68,7 @@ gem "ruby-lsp", "~> 0.23.11"
 
 gem "tailwindcss-rails", "~> 4.2"
 
-gem "tailwindcss-ruby", "~> 4.0"
+gem "tailwindcss-ruby", "~> 4.1"
 
 gem "rails_live_reload", "~> 0.4.0", :group => :development
 
