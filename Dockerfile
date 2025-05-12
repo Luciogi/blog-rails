@@ -33,6 +33,12 @@ RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y build-essential git pkg-config && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
+# PATCH for render.com failure
+RUN rm /var/lib/dpkg/info/libc-bin.*
+RUN apt-get clean
+RUN apt-get update
+RUN apt install libc-bin
+
 # Install application gems
 COPY Gemfile Gemfile.lock ./
 RUN bundle install && \
